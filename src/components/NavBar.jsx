@@ -3,12 +3,14 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Image from 'react-bootstrap/Image';
+import logo from '../images/logo.jpg'
 
-function NavScrollExample() {
+function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-danger" fixed="top">
+    <Navbar expand="lg" fixed="top" style={{backgroundColor:"#ff3131"}}>
       <Container fluid>
-        <Navbar.Brand href="#">LOGO</Navbar.Brand>
+          <Image src={logo} style={{width:"120px", height:"120px"}}></Image>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -16,8 +18,8 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Events</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/events">Events</Nav.Link>
 
           </Nav>
           <Form className="d-flex">
@@ -35,4 +37,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default NavBar;
