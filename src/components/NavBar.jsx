@@ -8,7 +8,7 @@ import logo from '../images/logo.jpg'
 
 function NavBar() {
   return (
-    <Navbar expand="lg" fixed="top" style={{backgroundColor:"#ff3131"}}>
+    <Navbar expand="lg" fixed="top" style={{ backgroundColor: "#ff3131", zIndex: 1000, position: "relative", marginBottom: "20px" }}>
       <Container fluid>
           <Image src={logo} style={{width:"120px", height:"120px"}}></Image>
         <Navbar.Toggle aria-controls="navbarScroll" />

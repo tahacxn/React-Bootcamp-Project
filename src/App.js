@@ -1,5 +1,5 @@
 import React from 'react';
-// import NavBar from './components/NavBar'
+//  import NavBar from './components/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 //  import Cards from './components/Cards';
 import {Route,Routes} from "react-router-dom"
@@ -14,15 +14,15 @@ import EventsPage from './Pages/EventsPage';
 function App() {
   return (
  <>
+ <div style={{minHeight:"100vh"}}>
+
   <Routes>
     <Route path="/" element={<HomePage/>}></Route>
     <Route path="/detail" element={<DetailsPage/>}></Route>
     <Route path="/purchase" element={<PaymentPage/>}></Route>
     <Route path="/events" element={<EventsPage/>}></Route>
   </Routes>
-  {/* <NavBar/> */}
- {/* <Slider/> */}
- {/* <Cards/>  */}
+ </div>
  </>
   );
 }

@@ -1,0 +1,19 @@
+/* CSS dosyanızda */
+footer {
+    background-color: #ff3131;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
