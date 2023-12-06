@@ -63,3 +63,37 @@
     width: 100%;
     color: white;
   }
+  @media (max-width: 1028px) {
+    .categories-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      padding: 2rem 0;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .image-container > img {
+      width: 100%;
+    }
+  
+    .show-all-button {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Ekran genişliği 768px ve altı için stil değişiklikleri */
+  
+  @media (max-width: 768px) {
+    .categories-container {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  }

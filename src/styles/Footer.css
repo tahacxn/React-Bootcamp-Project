@@ -43,3 +43,18 @@ footer {
     font-style: 1.3rem;
     color: #FFF6E0;
 }
+@media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .links {
+      margin-bottom: 1rem;
+    }
+  
+    .links a {
+      margin: 0.5rem 0;
+      display: block;
+    }
+  }

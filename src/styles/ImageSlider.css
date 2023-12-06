@@ -26,4 +26,13 @@
     font-size: 1.2rem; 
     line-height: 1.2;
   }
+  @media (max-width: 768px) {
+    .slider-container {
+      flex-direction: column;
+    }
   
+    .slider-image-container,
+    .slider-description-container {
+      width: 100%;
+    }
+  }

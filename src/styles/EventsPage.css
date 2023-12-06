@@ -48,22 +48,27 @@
     }
   }
   
-  @media only screen and (max-width: 768px) {
-    .event-grid {
-      grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 768px) {
+    .grid-container {
+      padding: 1rem;
+    }
+    .dropdown-body {
+      display: block;
+      width: 100%;
+    }
+    .listing-title {
+      font-size: 2rem;
     }
   
     .filters {
       flex-direction: column;
+      margin-bottom: 1rem;
     }
   
-    .listing-title {
-      font-size: 3.5rem;
-    }
   
-    .dropdown-body {
-      display: block;
-      width: 100%;
+    .grid-columns {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
     }
   }
   
@@ -71,4 +76,8 @@
     .event-grid {
       grid-template-columns: repeat(1, 1fr);
     }
+     .listing-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
   }
