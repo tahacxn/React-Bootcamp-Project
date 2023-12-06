@@ -5,10 +5,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import logo from '../images/logo.jpg'
+import "../styles/NavBar.css"
 
 function NavBar() {
   return (
-    <Navbar expand="lg" fixed="top" style={{ backgroundColor: "#ff3131", zIndex: 1000, position: "relative", marginBottom: "20px", padding:"0 3.5rem" }}>
+    <Navbar expand="lg" fixed="top" style={{ backgroundColor: "transparent", zIndex: 1000, position: "relative", padding:"0 3.5rem" }}>
       <Container fluid>
           <Image src={logo} style={{width:"120px", height:"120px"}}></Image>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -18,8 +19,8 @@ function NavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/" style={{margin:"0 1rem", fontWeight:"700"}}>Home</Nav.Link>
-            <Nav.Link href="/events" style={{fontWeight:"700"}}>Events</Nav.Link>
+            <Nav.Link className='nav-link' href="/" style={{margin:"0 1rem", fontWeight:"700"}}>Home</Nav.Link>
+            <Nav.Link className='nav-link' href="/events" style={{fontWeight:"700"}}>Events</Nav.Link>
 
           </Nav>
           <Form className="d-flex">

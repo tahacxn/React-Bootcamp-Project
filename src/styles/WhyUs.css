@@ -1,0 +1,11 @@
+.why-choose-us-container {
+    display: flex;
+    justify-content: space-around; /* Başlıkları eşit aralıklarla konumlandırmak için */
+    max-width: 800px; /* İstediğiniz genişliği ayarlayabilirsiniz */
+    margin: 0 auto; /* Sayfanın ortasına almak için */
+  }
+  
+  .feature {
+    text-align: center;
+  }
+  

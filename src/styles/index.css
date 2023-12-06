@@ -25,6 +25,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	background: linear-gradient(to bottom, rgba(100,72,254,1) 0%, rgba(96,5,148,1) 100%);
+	min-height: 100vh;
 	line-height: 1;
 	font-family: "HelveticaNeue",Arial,Helvetica,sans-serif;
 }

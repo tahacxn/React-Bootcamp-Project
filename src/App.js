@@ -1,13 +1,11 @@
 import React from 'react';
-//  import NavBar from './components/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-//  import Cards from './components/Cards';
 import {Route,Routes} from "react-router-dom"
 import HomePage from './Pages/HomePage';
 import DetailsPage from './Pages/DetailsPage';
 import PaymentPage from './Pages/PaymentPage';
 import EventsPage from './Pages/EventsPage';
-// import Slider from './components/Slider';
+
 
 
 

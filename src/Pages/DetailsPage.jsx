@@ -3,7 +3,7 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import "../styles/DetailsPage.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faClock, faMusic, faDoorOpen } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faClock, faUsers} from '@fortawesome/free-solid-svg-icons';
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 
@@ -28,12 +28,8 @@ function DetailsPage() {
               <span>Etkinlik - 21:30</span>
             </div>
             <div className="subfields-field">
-              <FontAwesomeIcon icon={faMusic} className="field-icon" />
+            <FontAwesomeIcon icon={faUsers} className="field-icon" />
               <span>Konser</span>
-            </div>
-            <div className="subfields-field">
-              <FontAwesomeIcon icon={faDoorOpen} className="field-icon" />
-              <span>Kapı Açılış - 19:30</span>
             </div>
           </div>
           <Link to="/purchase">

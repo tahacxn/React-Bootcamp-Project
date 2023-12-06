@@ -11,7 +11,7 @@ function Slider() {
         <Carousel.Item key={index}>
           <img
             className="d-block w-100"
-            src={event.image}
+            src={event.images}
             alt={`Slide ${index + 1}`}
 
 
