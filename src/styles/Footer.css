@@ -1,12 +1,12 @@
 /* CSS dosyanızda */
 footer {
     background-color: #ff3131;
-    padding: 20px;
     text-align: center;
     width: 100%;
 }
 
 .footer-container {
+    padding: 1rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

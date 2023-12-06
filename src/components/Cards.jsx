@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 
 function Cards() {
   return (
-    <Card style={{ width: '20rem' }}>
+    <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="https://plus.unsplash.com/premium_photo-1701158098302-46005140449f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D" style={{overflow:"hidden"}} />
       <Card.Body style={{padding:'2rem'}}>
         <Card.Title>Card Title</Card.Title>

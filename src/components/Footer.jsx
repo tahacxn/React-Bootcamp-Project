@@ -1,6 +1,6 @@
 import React from 'react';
-import "../styles/Footer.css"
 import logo from '../images/logo.jpg'
+import "../styles/Footer.css"
 const Footer = () => {
   return (
     <footer>
