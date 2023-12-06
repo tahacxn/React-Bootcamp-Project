@@ -228,7 +228,7 @@ const eventsData = [
         "id": 13,
         "name": "Mor ve Ötesi",
         "categories": "Konser",
-        "image" : "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/mor-ve-otesi-2023112920185498da85aa66e047579603c4bcdc4c305c.png",
+        "images" : "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/mor-ve-otesi-2023112920185498da85aa66e047579603c4bcdc4c305c.png",
         "date": "30 Aralık 2023 Cumartesi",
         "place": "İstanbul - Volkswagen Arena",
         "location": {"lat": 41.108805534986914, "lng": 29.00787486148874},
@@ -239,7 +239,7 @@ const eventsData = [
         "id": 14,
         "name": "Sena Şener",
         "categories": "Konser",
-        "image" : "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sena-sener-2023921163414e2cfa0e9cf884a67ba95906880c37fbf.jpg",
+        "images" : "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sena-sener-2023921163414e2cfa0e9cf884a67ba95906880c37fbf.jpg",
         "date": "15 Aralık 2023 Cuma",
         "place": "İstanbul - Dorock XL Kadıköy",
         "location": {"lat": 40.98972064901628, "lng": 29.02294489854467},
@@ -249,7 +249,7 @@ const eventsData = [
         "id": 15,
         "name": "The Blaze",
         "categories": "Konser",
-        "image" : "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sena-sener-2023921163414e2cfa0e9cf884a67ba95906880c37fbf.jpg",
+        "images" : "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sena-sener-2023921163414e2cfa0e9cf884a67ba95906880c37fbf.jpg",
         "date": "15 Aralık 2023 Cuma",
         "place": "İstanbul - KüçükÇiftlik Park",
         "location": {"lat": 41.0429487598669 , "lng": 28.992927083677316 },
@@ -259,7 +259,7 @@ const eventsData = [
         "id": 16,
         "name": "Evgeny Grinko",
         "categories": "Konser",
-        "image" : "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sena-sener-2023921163414e2cfa0e9cf884a67ba95906880c37fbf.jpg",
+        "images" : "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sena-sener-2023921163414e2cfa0e9cf884a67ba95906880c37fbf.jpg",
         "date": "20 Aralık 2023 Çarşamba",
         "place": "Ankara - Yenimahalle Nazım Hikmet KM - Genco Erkal Sahnesi",
         "location": {"lat": 39.96014731992847 , "lng": 32.779630122659476 },
@@ -269,7 +269,7 @@ const eventsData = [
         "id": 17,
         "name": "Soft Analog",
         "categories": "Konser",
-        "image" : "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/soft-analog-20233621418.jpg",
+        "images" : "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/soft-analog-20233621418.jpg",
         "date": "05 Ocak 2024 Cuma",
         "place": "İzmir -  Holly Stone Performance Hall Bornova",
         "location": {"lat": 38.46349533998791 , "lng":  27.218144185223977 },
@@ -332,3 +332,4 @@ const eventsData = [
         "price": "Ücretsiz"
       }
 ]
+export default eventsData

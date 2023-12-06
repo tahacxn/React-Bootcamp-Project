@@ -1,11 +1,34 @@
+.why-us-title{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
 .why-choose-us-container {
     display: flex;
-    justify-content: space-around; /* Başlıkları eşit aralıklarla konumlandırmak için */
-    max-width: 800px; /* İstediğiniz genişliği ayarlayabilirsiniz */
-    margin: 0 auto; /* Sayfanın ortasına almak için */
+    justify-content: space-around; 
+    align-items: center;
+    max-width: 90%; 
+    margin: 0 auto; 
+  }
+  .why-us-icon{
+    margin: 1.5rem 0;
+    color: #FFF6E0;
+    align-items: center;
   }
   
   .feature {
-    text-align: center;
+    text-align:left;
+  }
+  .feature-title{
+    color:hsl(278, 68%, 11%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: .5rem 0;
+  }
+  .feature > p{
+    font-style: 1rem;
+    color: white;
+    line-height: 2;
   }
   

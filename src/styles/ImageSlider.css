@@ -1,0 +1,29 @@
+/* ImageSlider.css */
+.slider-container {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  
+  .slider-image-container {
+   width: 50%; /* Resim bölümünün genişliği tüm boş alanı kaplamasını sağlar */
+  }
+  
+  .slider-description-container {
+    width: 40%;
+  }
+  .event-title{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #FFF6E0;
+  }
+  .event-date{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+  .event-text{
+    font-size: 1.2rem; 
+    line-height: 1.2;
+  }
+  

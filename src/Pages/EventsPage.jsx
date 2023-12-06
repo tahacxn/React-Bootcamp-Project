@@ -1,16 +1,18 @@
+// EventsPage.jsx
+import "../styles/EventsPage.css"
 import React, { useState } from 'react';
-import Cards from '../components/Cards';
+import EventCard from '../components/EventCard';
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { Dropdown } from 'react-bootstrap';
-import "../styles/EventsPage.css";
+import eventsData from "../data/Events";
 
 function EventsPage() {
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
 
   const cities = ['İstanbul', 'Ankara', 'İzmir'];
-  const categories = ['Rock', 'Pop', 'Jazz', 'Klasik'];
+  const categories = ['Tiyatro', 'Bale', 'Konser', 'Bootcamp'];
 
   const handleCityChange = (city) => {
     setSelectedCity(city);
@@ -19,30 +21,15 @@ function EventsPage() {
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
   };
-  // Örnek veri
-  const eventData = [
-    { id: 1, title: 'Etkinlik 1', location: 'Your Location 1', dateTime: 'Event date - Time 1' },
-    { id: 2, title: 'Etkinlik 2', location: 'Your Location 2', dateTime: 'Event date - Time 2' },
-    { id: 3, title: 'Etkinlik 3', location: 'Your Location 3', dateTime: 'Event date - Time 3' },
-    { id: 4, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 5, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 6, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 7, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 8, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 9, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 10, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 11, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 12, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 13, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 14, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 15, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 16, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 17, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 18, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 19, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    { id: 20, title: 'Etkinlik 4', location: 'Your Location 4', dateTime: 'Event date - Time 4' },
-    // Daha fazla etkinlik ekleyebilirsiniz
-  ];
+
+  const filteredEventsData = eventsData.filter((event) => {
+    const cityMatch = selectedCity ? event.place.includes(selectedCity) : true;
+    const categoryMatch = selectedCategory ? event.category === selectedCategory : true;
+    return cityMatch && categoryMatch;
+  });
+
+  // eventsData'yi id'ye göre sırala
+  const sortedEventsData = filteredEventsData.sort((a, b) => a.id - b.id);
 
   return (
     <>
@@ -78,13 +65,14 @@ function EventsPage() {
           </Dropdown>
         </div>
         <hr />
-        <div className="event-grid">
-          {eventData.map((event) => (
-            <div key={event.id} className="grid-col">
-              <Cards
-                title={event.title}
-                location={event.location}
-                dateTime={event.dateTime}
+        <div className="grid-columns" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px' }}>
+          {sortedEventsData.map((event) => (
+            <div key={event.id} className="column">
+              <EventCard
+                title={event.name}
+                location={event.place}
+                dateTime={event.date}
+                imageSrc={event.images}
               />
             </div>
           ))}
