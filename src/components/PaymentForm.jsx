@@ -29,15 +29,15 @@ export default function PaymentForm ({ setFormData, formData, animateSlider }) {
 
 		for (const i in formData) {
 			if (!formData[i]) {
-				handleError(i, 'Can`t be blank')
+				handleError(i, 'Boş olmamalı')
 			} else handleError(i, '', 'remove')
 		}
 
 		if (formData.number) {
 			if (formData.number.length < 19) {
-				handleError('number', 'Number is too short')
+				handleError('number', 'Sayı kısa')
 			} else if (formData.number.match(/[^0-9\s]/g)) {
-				handleError('number', 'Wrong format, numbers only')
+				handleError('number', 'Sadece Sayı')
 			} else handleError('number', '', 'remove')
 		}
 
@@ -47,8 +47,8 @@ export default function PaymentForm ({ setFormData, formData, animateSlider }) {
 			} else handleError('cvc', '', 'remove')
 		}
 
-		if (!formData.mm) handleError('mm', 'Can`t be blank')
-		if (!formData.yy) handleError('yy', 'Can`t be blank')
+		if (!formData.mm) handleError('mm', 'Boş olmamalı')
+		if (!formData.yy) handleError('yy', 'Boş olmamalı')
 
 		if (document.querySelectorAll('.input--error').length === 0) animateSlider(true)
 	}
@@ -56,23 +56,23 @@ export default function PaymentForm ({ setFormData, formData, animateSlider }) {
 	return (
 		<form className='cardForm' onSubmit={handleSubmit}>
 			<label className='labelname'>
-				Cardholder Name
-				<input type='text' placeholder='e.g. Jane Appleseed' onChange={handleInput} name='name' className='card-input' />
+				Kart Üzerindeki İsim
+				<input type='text' placeholder='e.g. Taha Can' onChange={handleInput} name='name' className='card-input' />
 			</label>
 			<p className='info info--hidden' aria-live='polite'></p>
 
 			<label className='labelnumber'>
-				Card Number
+				Kart Numarası
 				<input type='text' placeholder='e.g. 1234 5678 9123 0000' onChange={handleInput} name='number' className='card-input' minLength={19} />
 			</label>
 			<p className='info info--hidden' aria-live='polite'></p>
 
 			<div className='cvc-mmyy'>
 				<label className='labelmm labelyy'>
-					Exp. Date (MM/YY)
+					Tarih (Ay/Yıl)
 					<div>
-						<input type='text' placeholder='MM' onChange={handleInput} name='mm' className='card-input' />
-						<input type='text' placeholder='YY' onChange={handleInput} name='yy' className='card-input' />
+						<input type='text' placeholder='Ay' onChange={handleInput} name='mm' className='card-input' />
+						<input type='text' placeholder='Yıl' onChange={handleInput} name='yy' className='card-input' />
 					</div>
 				</label>
 				<p className='info info--hidden' aria-live='polite'></p>
@@ -85,9 +85,9 @@ export default function PaymentForm ({ setFormData, formData, animateSlider }) {
 			</div>
 
 			<div className="buttons">
-			<button type='submit' className='btn-submit btn-primary'>Confirm</button>
+			<button type='submit' className='btn-submit btn-primary'>Onayla</button>
 			<Link to="/">
-			<button className='btn-primary'>Go Back</button>
+			<button className='btn-primary'>Ana Sayfaya Dön</button>
 			</Link>
 			</div>
 		</form>

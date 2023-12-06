@@ -12,10 +12,10 @@ export default function PaymentThanks ({ setFormData, animateSlider }) {
 	return (
 		<div className='cardThanks'>
 			<img src={iconComplete} alt='' />
-			<p>Thank you!</p>
-			<p>For your purchase</p>
+			<p>İşleminiz onaylanmıştır</p>
+			<p>İyi eğlenceler!</p>
 			<Link to="/">
-			<button className='btn-primary' onClick={resetForm}>Go Back</button>
+			<button className='btn-primary' onClick={resetForm}>Ana Sayfaya Dön</button>
 			</Link>
 		</div>
 	)

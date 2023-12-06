@@ -1,15 +1,16 @@
-// EventsPage.jsx
-import "../styles/EventsPage.css"
+// pages/EventsPage.jsx
 import React, { useState } from 'react';
-import EventCard from '../components/EventCard';
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import { Dropdown } from 'react-bootstrap';
-import eventsData from "../data/Events";
+import EventCard from '../components/EventCard';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+import eventsData from '../data/Events';
+import '../styles/EventsPage.css';
 
 function EventsPage() {
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
 
   const cities = ['İstanbul', 'Ankara', 'İzmir'];
   const categories = ['Tiyatro', 'Bale', 'Konser', 'Bootcamp'];
@@ -22,23 +23,46 @@ function EventsPage() {
     setSelectedCategory(category);
   };
 
-  const filteredEventsData = eventsData.filter((event) => {
-    const cityMatch = selectedCity ? event.place.includes(selectedCity) : true;
-    const categoryMatch = selectedCategory ? event.category === selectedCategory : true;
-    return cityMatch && categoryMatch;
-  });
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+  };
 
-  // eventsData'yi id'ye göre sırala
-  const sortedEventsData = filteredEventsData.sort((a, b) => a.id - b.id);
+  const getFilteredEvents = () => {
+    let filteredEvents = eventsData;
+
+    if (selectedCity) {
+      filteredEvents = filteredEvents.filter((event) =>
+        event.place.toLowerCase().includes(selectedCity.toLowerCase())
+      );
+    }
+
+    if (selectedCategory) {
+      filteredEvents = filteredEvents.filter((event) =>
+        event.category.toLowerCase().includes(selectedCategory.toLowerCase())
+      );
+    }
+
+    if (searchQuery) {
+      filteredEvents = filteredEvents.filter(
+        (event) =>
+          event.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          event.category.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+    }
+
+    return filteredEvents;
+  };
+
+  const sortedEventsData = getFilteredEvents().sort((a, b) => a.id - b.id);
 
   return (
     <>
-      <NavBar />
+      <NavBar onSearch={handleSearch} />
       <div className="grid-container">
         <h1 className="listing-title">Etkinlikler</h1>
         <div className="filters">
           <Dropdown onSelect={handleCityChange} className="mr-2">
-            <Dropdown.Toggle variant="secondary" className='dropdown-body '>
+            <Dropdown.Toggle variant="secondary" className="dropdown-body">
               {selectedCity || 'Şehir Seçiniz'}
             </Dropdown.Toggle>
             <Dropdown.Menu>
@@ -51,7 +75,7 @@ function EventsPage() {
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown onSelect={handleCategoryChange}>
-            <Dropdown.Toggle variant="secondary" className='dropdown-body '>
+            <Dropdown.Toggle variant="secondary" className="dropdown-body">
               {selectedCategory || 'Kategori Seçiniz'}
             </Dropdown.Toggle>
             <Dropdown.Menu>
@@ -69,6 +93,7 @@ function EventsPage() {
           {sortedEventsData.map((event) => (
             <div key={event.id} className="column">
               <EventCard
+                id={event.id}
                 title={event.name}
                 location={event.place}
                 dateTime={event.date}

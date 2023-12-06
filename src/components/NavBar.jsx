@@ -7,7 +7,11 @@ import Image from 'react-bootstrap/Image';
 import logo from '../images/logo.jpg'
 import "../styles/NavBar.css"
 
-function NavBar() {
+function NavBar({ onSearch }) {
+  const handleSearch = (event) => {
+    onSearch(event.target.value);
+  };
+
   return (
     <Navbar expand="lg" fixed="top" style={{ backgroundColor: "transparent", zIndex: 1000, position: "relative", padding:"0 3.5rem" }}>
       <Container fluid>
@@ -19,18 +23,19 @@ function NavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link className='nav-link' href="/" style={{margin:"0 1rem", fontWeight:"700"}}>Home</Nav.Link>
-            <Nav.Link className='nav-link' href="/events" style={{fontWeight:"700"}}>Events</Nav.Link>
+            <Nav.Link className='nav-link' href="/" style={{margin:"0 1rem", fontWeight:"700"}}>Ana Sayfa</Nav.Link>
+            <Nav.Link className='nav-link' href="/events" style={{fontWeight:"700"}}>Tüm Etkinlikler</Nav.Link>
 
           </Nav>
           <Form className="d-flex">
-            <Form.Control
+          <Form.Control
               type="search"
-              placeholder="Search"
+              placeholder="Ara"
               className="me-2"
               aria-label="Search"
+              onChange={handleSearch}
             />
-            <Button variant="outline-light">Search</Button>
+            <Button variant="outline-light">Ara</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
