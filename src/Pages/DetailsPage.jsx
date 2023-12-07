@@ -40,7 +40,7 @@ function DetailsPage() {
                 {event.price && (
                   <div className="subfields-field">
                     <FontAwesomeIcon icon={faMoneyBillAlt} className="field-icon" />
-                    <span>Fiyat: {typeof event.price === 'string' ? event.price : `$${event.price}`}</span>
+                    <span>Fiyat: {typeof event.price === 'string' ? event.price : `₺${event.price}`}</span>
                   </div>
                 )}
               </div>
