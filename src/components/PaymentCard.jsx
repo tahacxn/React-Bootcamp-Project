@@ -4,7 +4,7 @@ export default function PaymentCard({ formData }) {
 			<div className='cardFront'>
 				<span>{formData.number || "0000 0000 0000 0000"}</span>
 				<div>
-					<span>{formData.name || "Jane Appleseed"}</span>
+					<span>{formData.name || "<Taha Can>"}</span>
 					<span>{formData.mm || "00"}/{formData.yy || "00"}</span>
 				</div>
 			</div>
