@@ -228,9 +228,16 @@ const eventsData = [
         "id": 13,
         "name": "Mor ve Ötesi",
         "category": "Konser",
-        "description":{
-            "text":[""]
-        },
+        "description": {
+            "text": [
+              "Mor ve Ötesi",
+              "Kapı açılış saati: 19.00",
+              "Konser saati: 21.00",
+              "Mor ve Ötesi' NDEN YILIN SON KONSERİ",
+              "YENİ YILI mor ve ötesi İLE KARŞILIYORUZ",
+              "Rock müzik dünyasının ülkemizdeki en popüler gruplarından mor ve ötesi, yılın son konseri için sahnede! Grup,  ikonikleşmiş şarkılarından oluşan özel bir setlist ile, 30 Aralık 2023 akşamı Volkswagen Arena'da Epifoni organizasyonuyla hayranlarıyla buluşacak."
+              ]
+          },
         "images" : "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/mor-ve-otesi-2023112920185498da85aa66e047579603c4bcdc4c305c.png",
         "date": "30 Aralık 2023 Cumartesi",
         "place": "İstanbul - Volkswagen Arena",
@@ -244,9 +251,15 @@ const eventsData = [
         "id": 14,
         "name": "Sena Şener",
         "category": "Konser",
-        "description":{
-            "text":[""]
-        },
+        "description": {
+            "text": [
+              "Sena Şener İstanbul Konseri Biletleri",
+              "Sena Şener 15 Aralık'ta Kadıköy Dorock XL Sahnesi'nde!",
+              "Yaş Sınırı: 18+",
+              "Sena Şener, müzik kariyerine 15 yaşında şarkılarını internet üzerinden paylaşarak başlamıştır. Bak Bana, Ona, Sevmemeliyiz ve Dostum Değil gibi single'ları bulunmaktadır. Sena Şener'in müziği genellikle Türk Indie türünde yer almaktadır.",
+              "İnsan Gelir İnsan Geçer adlı bir albümü bulunmaktadır."
+              ]
+          },
         "images" : "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sena-sener-2023921163414e2cfa0e9cf884a67ba95906880c37fbf.jpg",
         "date": "15 Aralık 2023 Cuma",
         "place": "İstanbul - Dorock XL Kadıköy",
@@ -259,9 +272,17 @@ const eventsData = [
         "id": 15,
         "name": "The Blaze",
         "category": "Konser",
-        "description":{
-            "text":[""]
-        },
+        "description": {
+            "text": [
+              "The Blaze",
+              "Kapı Açılış Saati: 18:00",
+              "Ünlü Fransız elektro ikilisi THE BLAZE, 5 yıl aradan sonra canlı performansı  ile 18 mayıs 2024’de Epifoni deneyimiyle sevenlerini dans ettirmeye KüçükÇiftlik Park’a geliyor !",
+              "Çarpıcı vokallerle süslü mistik müzikleriyle hislerinizi harekete geçiren Fransız elektro ikilisi THE BLAZE, canlı performanslarıyla 5 yıl aradan sonra İstanbul'u dans ettirmeye geliyor! Bu yıl yayınladıkları ikinci albümleri 'Jungle'ın başarısını turne ile süsleyecek olan The Blaze, Epifoni organizasyonuyla 18 Mayıs 2024 gecesi KüçükÇiftlik Park'ta sahne alacak.",
+              "Her ikisi de sinema ve fotoğrafçılık dünyasından gelen Guillaume ve Jonathan Alric tarafından 2016 yılında kurulan The Blaze, 'Virile' ve ardından aynı adlı EP'den 'Territory' için hazırladıkları videonun yayınlanmasıyla kısa sürede adından çokça söz ettirdi. 100 milyondan fazla izlenen bu video birçok ödüle layık görüldü ve özellikle komünyon sahneleri sayesinde hem müzikseverlerin, hem de eleştirmenlerin ilgisini çekti. İkili, ilk albümleri 'Dancehall'ın kulağa ruhun derinliklerinden geliyormuş gibi gelen vokalleri ve rafine prodüksiyonları ile uluslararası müzik sahnesinde de varlıklarını sağlamlaştırdı.",
+              "İkinci albümleri 'Jungle' ile ünlerini zirveye taşıyan The Blaze, seyahat ettikleri ülkelerden yeni deneyimlerle dönüyor ve görsel dünyalarını ve müziklerini daha da ileri götürüyor. Tamamen kendi yaptıkları videolar tükenmez bir yaşam ve ilham kaynağı olan şehir ormanlarında geçen ikilinin büyülü dünyasına tanıklık etmek isteyenler için konserin biletleri satışta!",
+            ]
+  
+             },
         "images" : "https://assets-global.website-files.com/62158cc7e1cd8f0ec3729390/63ee76b3f633634aafbef49f_the-blaze-LbQDU.jpeg",
         "date": "15 Aralık 2023 Cuma",
         "place": "İstanbul - KüçükÇiftlik Park",
@@ -274,9 +295,15 @@ const eventsData = [
         "id": 16,
         "name": "Evgeny Grinko",
         "category": "Konser",
-        "description":{
-            "text":[""]
-        },
+        "description": {
+            "text": [
+              "Evgeny Grinko Konseri Biletleri",
+              "Zamanımızın büyülü piyanisti Evgeny Grinko, sevenleri ile buluşacak.",
+              "Evgeny Grinko ya da Yevgeni Grinko, (Rusça: Евгений Гринько, d.1984, Jukovski), Rus müzisyen, piyanist ve davulcu. Greendaizer adıyla da performans göstermektedir. Çeşitli yerel Rus gruplarında çalan müzisyen, Joy Division’ın Love Will Tear Us Apart şarkısına bir ordu bandosu için yaptığı düzenleme ile orkestrasyon alanına geçmiştir.",
+              "Moskova yakınlarında küçük bir kentte, Zhukovsky'de yaşayan Grinko yaşadığı şehirden fazlasıyla etkilenmiştir. Grinko Türkiye'de çok sayıda konser vermiştir. Valse isimli bestesi YouTube'da 30+ milyon izlenmiştir.",
+              "Evgeny Grinko'nun İstanbul, İzmir ve Bursa konseri için geç kalmadan yerini ayırt. Bu eşsiz müzik şölenini kaçırma!"
+             ]
+          },
         "images" : "https://pbs.twimg.com/profile_images/1335563560169197568/T-pjCR86_400x400.jpg",
         "date": "20 Aralık 2023 Çarşamba",
         "place": "Ankara - Yenimahalle Nazım Hikmet KM - Genco Erkal Sahnesi",
@@ -289,9 +316,14 @@ const eventsData = [
         "id": 17,
         "name": "Soft Analog",
         "category": "Konser",
-        "description":{
-            "text":[""]
-        },
+        "description": {
+            "text": [
+              "Soft Analog Konseri ",
+              "Soft Analog disko, synth-pop, dream-pop, new wave, funk ve elektro dans-pop formlarının sesleriyle büyülenen, 80'ler ve 90'ların seslerinden ilham alan bir grup. Özellikle o dönemin synthesizer, drum machine, disko-funk bas ve davul kalıplarından ve eski moda tarzından etkileniyor. Soft Analog'un şarkıları dinamik-enerjik sesler, melankolik ve eleştirel bir anlatımla modern hayatın yarattığı duygu ve farkındalıklara değiniyor.",
+              "Yaş Sınırı: 18+"
+            ]
+  
+             },
         "images" : "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/soft-analog-20233621418.jpg",
         "date": "05 Ocak 2024 Cuma",
         "place": "İzmir -  Holly Stone Performance Hall Bornova",

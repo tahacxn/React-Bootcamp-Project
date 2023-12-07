@@ -3,8 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Image from 'react-bootstrap/Image';
-import logo from '../images/logo.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import "../styles/NavBar.css"
 
 function NavBar({ onSearch }) {
@@ -13,9 +13,12 @@ function NavBar({ onSearch }) {
   };
 
   return (
-    <Navbar expand="lg" fixed="top" style={{ backgroundColor: "transparent", zIndex: 1000, position: "relative", padding:"0 3.5rem" }}>
+    <Navbar expand="lg" fixed="top" style={{ backgroundColor: "transparent", zIndex: 1000, position: "relative", padding:"1rem 3.5rem" }}>
       <Container fluid>
-          <Image src={logo} style={{width:"120px", height:"120px"}}></Image>
+      <div style={{ display: "flex", alignItems: "center" }}>
+          <FontAwesomeIcon icon={faSearch} style={{ fontSize: "48px", color: "#fff", marginRight: "10px" }} />
+          <span style={{ color: "#fff", fontWeight: "bold", fontSize: "24px" }}>EventFinder</span>
+        </div>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

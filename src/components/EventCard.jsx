@@ -22,7 +22,7 @@ function EventCard({ id, title, location, dateTime, imageSrc }) {
         </Card.Text>
         <div>
         <Link to="/purchase">
-            <Button variant="danger" style={{ marginRight: '1rem' }}>Buy Ticket</Button>
+            <Button variant="danger" style={{ marginRight: '1rem' }}>Bilet Satın Al</Button>
           </Link>
           <Link to={`/detail/${id}`}>
             <Button variant="outline-danger">Detaylar</Button>

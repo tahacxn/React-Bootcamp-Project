@@ -89,7 +89,7 @@ function EventsPage() {
           </Dropdown>
         </div>
         <hr />
-        <div className="grid-columns" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px' }}>
+        <div className="grid-columns">
           {sortedEventsData.map((event) => (
             <div key={event.id} className="column">
               <EventCard
